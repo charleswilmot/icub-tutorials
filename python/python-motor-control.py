@@ -40,7 +40,7 @@ iEnc.getEncoders(encs.data())
 home=yarp.Vector(jnts, encs.data())
 
 #initialize a new tmp vector identical to encs
-tmp=yarp.Vector(jnts)
+tmp=yarp.Vector(jnts, encs.data())
 
 
 tmp.set(0, tmp.get(0)+10)
